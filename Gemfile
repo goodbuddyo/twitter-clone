@@ -20,6 +20,16 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'coffee-rails', '~> 4.2'
 # removed coffeescript gem since we will be using ES6
 
+gem 'devise'
+
+gem 'react-rails', '~> 2.5'
+
+# see https://rubygems.org/gems/jquery-rails/versions/4.3.1
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
+# gem 'webpacker'
+
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -59,4 +69,5 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# removed this param to address tzinfo warnings  , platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data'

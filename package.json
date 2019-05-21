@@ -1,5 +1,31 @@
 {
   "name": "twitter-clone",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "^4.0.2",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.4.1"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodbuddyo/twitter-clone.git"
+  },
+  "author": "sean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodbuddyo/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/goodbuddyo/twitter-clone#readme"
 }
