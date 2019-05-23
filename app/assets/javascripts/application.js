@@ -15,6 +15,11 @@
 //= require jquery
 //= require activestorage
 //= require react
-//= require react_ujs
+
+//= require foundation
+$(document).foundation();
+
 //= require components
 //= require_tree .
+
+$(function(){ $(document).foundation(); });

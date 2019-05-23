@@ -1,7 +1,9 @@
+import Greet from './greet.jsx';
+
 class Main extends React.Component {
   render() {
     return (
-      <h1>Hello from the main err components  .jsx Main class</h1>
+      <Greet />
     )
   }
 }
