@@ -21,5 +21,6 @@ $(document).foundation();
 
 //= require components
 //= require_tree .
+//= require modernizr
 
 $(function(){ $(document).foundation(); });

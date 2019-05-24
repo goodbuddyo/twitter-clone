@@ -504,14 +504,13 @@ textarea:focus {
 /*  */
 
 
-
 /* end cloudfront addition */
 
 
 /*  added styles 20190523  */
-.menu.mg-topmenu .mg-topmenuli a { display: inline; padding: 0.7rem .1rem 0.7rem .5rem; }
-div.top-bar.mg-top-bar {  display: flex;
-justify-content: flex-start;}
+.menu.mg-topmenu .mg-topmenuli a { display: inline; padding: 0.7rem .3rem 0.7rem .3rem; }
+div.mg-top-bar {  display: flex;
+justify-content: flex-start; background-color:#99cccc;}
 .mg-login-input label { margin-top: 0.1rem; margin-bottom: 0.1rem; display:block;}
 .mg-sessionRegWrapper{display:flex; justify-content: flex-start; margin-top: 2.0rem;}
 .mg-sessionReg {float:left; padding-right: .93rem;}
@@ -520,18 +519,18 @@ justify-content: flex-start;}
 .mg-vehicle-heading  { margin: 0.2rem 0.4rem 0.6rem 0.4rem;   }
 .mg-vehicle-heading a.button { padding: 0.9rem 1.6rem; margin: 0.2rem 0.4rem; font-size: 1.2rem; }
 a.button.radius {border-radius: 0.3rem; }
-.mg-jumbo .subheader { padding-right:18.0em; color: #eeeeee;}
+.mg-jumbo .subheader { padding-right:0.1em; color: #eeeeee;}
 .mg-jumbo .alert {  text-align: right; color: #ffffff;}
 .mg-jumbo .notice { text-align: right; color: #ffffff;}
-.callout.large.mg-jumbo { padding-top: .9rem; padding-right: 1rem; padding-bottom: 8rem; padding-left: 1rem; }
-
-
+.callout.large.mg-jumbo { padding-top: .2rem; padding-right: 1rem; padding-bottom: 9rem; padding-left: 1rem; }
 .callout.large { padding-top: 3rem;  padding-right: 3rem; padding-bottom: 3rem; padding-left: 3rem; }
-div.callout.primary.mg-jumbo {     background-color: #000000; background-repeat: no-repeat; background-position : 70% 30%; }
+.callout.primary.mg-jumbo {     background-color: #000000; background-repeat: no-repeat; background-position : 54% 10%; }
 .mg-vehicle-item {margin-bottom: 0.9rem;}
 .mg-vehicle-wrapper .reveal.mg-vehiclemodal { top: 10px; }
-
 .mg-service-wrapper .mg-buttonrow a.button { padding: 0.4rem 0.6rem; }
+.mg-jumbo .mg-toptext .cell  p,
+.mg-toptext p { margin : 0.6rem 0 0 0; margin-bottom: .2rem;}
+
 
 @media print, screen and (min-width: 64em) {
   .mg-vehicle-item div.hide-for-small-only {display:inline-block!important;}

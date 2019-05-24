@@ -15,3 +15,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # add modernizer
 Rails.application.config.assets.precompile += %w( vendor/modernizr.js )
+

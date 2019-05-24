@@ -10,12 +10,12 @@
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body class="mg-body ">
 
     <!-- application.html.erb is a wrapper file forevery page within the project -->
     <!-- Start Top Bar will appear in every page within the project -->
-    <div class="top-bar mg-top-bar ">
-      <div class="top-bar-left">
+    <div class=" mg-top-bar ">
+      <div class="row medium-8 large-7 columns top-bar-left">
         <ul class="menu float-left mg-topbrand" >
           <li class="menu-text mg-topbrandli">My Garage</li>
         </ul>
@@ -29,7 +29,7 @@
         <% else %>
           <li class=" menu-text  float-right mg-topmenuli">  
           <%= link_to "Login", new_user_session_path %> 
-          or
+           <span> or </span>
           <%= link_to "Sign Up", new_user_registration_path %>  
           </li>
         <% end %>
@@ -40,9 +40,29 @@
 
     <div class="callout large primary mg-jumbo">
       <div class="row column text-center">
-        <h5 class="subheader">Welcome to the</h5>
+
+        <div class="grid-x grid-padding-x mg-toptext">
+          <div class="large-5 medium-5 small-5 cell">
+            <h4 class="subheader text-right">Welcome to the</h4>
+          </div>
+
+          <div class="large-1 medium-1 small-1 cell">
+            &nbsp;
+          </div>
+
+          <div class="large-5 medium-5 small-5 cell">
+                        <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+            <p class="" style="color:white">A vehicle service log app.</p>
+
+            
+          </div>
+        </div>
+
+<!-- 
+        <h5 class="subheader text-right">Welcome to the</h5>
         <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+        <p class="alert"><%= alert %></p> -->
       </div>
     </div>
 
