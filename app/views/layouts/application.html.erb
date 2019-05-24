@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "My Garage01 " %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    "application" %>
@@ -11,109 +11,52 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
 
+    <!-- application.html.erb is a wrapper file forevery page within the project -->
+    <!-- Start Top Bar will appear in every page within the project -->
+    <div class="top-bar mg-top-bar ">
+      <div class="top-bar-left">
+        <ul class="menu float-left mg-topbrand" >
+          <li class="menu-text mg-topbrandli">My Garage</li>
+        </ul>
 
-          <div class="row column">
-            <br>
-            <img class="thumbnail" src="https://placehold.it/450x250">
-            <h5>Welcome to My Garage</h5>
-            <p>A vehicle service log app. Select a vehicle for recent service record information.</p>
-          </div>
-        </div>
-        <div class="off-canvas-content" data-off-canvas-content>
-          <div class="title-bar hide-for-large">
-            <div class="title-bar-left">
-              <button class="menu-icon" type="button" data-open="my-info"></button>
-              <span class="title-bar-title">My  Garage</span>
-            </div>
-          </div>
+        <ul class="menu float-right mg-topmenu" >
+        <% if user_signed_in? %>
+          <li class=" menu-text float-right mg-topmenuli"> 
+            <%= current_user.email %>
+            <%= link_to "Log Out", destroy_user_session_path, method: 'DELETE' %> 
+          </li>
+        <% else %>
+          <li class=" menu-text  float-right mg-topmenuli">  
+          <%= link_to "Login", new_user_session_path %> 
+          or
+          <%= link_to "Sign Up", new_user_registration_path %>  
+          </li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
 
-          <div class="row">
-            <div class="medium-6 columns">
-              
-                        <!-- yield displays what is in index.html.erb  -->
-              <%= yield %>
+    <div class="callout large primary mg-jumbo">
+      <div class="row column text-center">
+        <h5 class="subheader">Welcome to the</h5>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+    </div>
 
-            </div>
-          </div>
-
-
-          <div class="callout primary">
-            <div class="row column">
-
-              <div class="callout clearfix">
-                <div class="float-left">
-                  <h5>Welcome to My Garage</h5>
-                  <!-- <a class="button float-left">Left</a> -->
-                </div>
-                <div class="float-right">
-                  <% if user_signed_in? %>
-                  Welcome <%= current_user.email %>,
-                  <%= link_to "logout", destroy_user_session_path, method: 'DELETE' %>
-                  <% else %>
-                  Please!!
-                  <%= link_to "login", new_user_session_path %>
-                  or
-                  <%= link_to "signup", new_user_registration_path %>
-                  <% end %>
-                </div>
-              </div>
-
-              <p class="notice"><%= notice %></p>
-              <p class="alert"><%= alert %></p>
-
-            </div>
-          </div>
-          <div class="row small-up-2 medium-up-3 large-up-4">
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x150">
-              <h5>Car 1</h5>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x150">
-              <h5>Car 2</h5>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x150">
-              <h5>Car 3</h5>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x150">
-              <h5>Car 4</h5>
-            </div>
-            
-          </div>
-          <hr>
-          <div class="row">
-            <div class="medium-6 columns">
-              <h3>Contact Info</h3>
-              <p>Macs service station.</p>
-              <ul class="menu">
-                <li><a href="#">Dribbble</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Yo</a></li>
-              </ul>
-            </div>
-            <div class="medium-6 columns">
-              <label>Name
-                <input type="text" placeholder="Name">
-              </label>
-              <label>Email
-                <input type="text" placeholder="Email">
-              </label>
-              <label>
-                Message
-                <textarea placeholder="holla at a designerd"></textarea>
-              </label>
-              <input type="submit" class="button expanded" value="Submit">
-            </div>
-          </div>
+    <div class="row medium-8 large-7 columns">
+      <div class="blog-post">
+        <div class="mg-yieldcontent">
+          <!-- <p>Rails dynamic content displays here. </p> -->
+          <%= yield %>
+          <!-- <p>Rails dynamic content ends here. </p> -->
         </div>
       </div>
     </div>
+
+      <!--  these js files came with the Foundation starter template, they need to be added to assets/javascript/vendors  -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script>

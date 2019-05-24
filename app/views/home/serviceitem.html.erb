@@ -1,0 +1,95 @@
+
+    <div class="row medium-12 large-12 columns mg-service-wrapper">
+
+      <div class="row mg-buttonrow">
+        <div class="large-4 columns">
+           <ul class="menu simple">
+            <li><a class="button info radius expand" href="/">Vehicles </a></li>
+          </ul>
+        </div>
+        <div class="large-4 columns">
+        
+        </div>
+        <div class="large-4 columns">
+          <div class="row collapse">
+            <ul class="menu simple">
+            <li><a class="button info radius expand" href="/servicerecords">Service Records </a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+     <h3>2014 Mercedes ml350 - Blue</h3>
+     <h4>Service Item For March 22, 2019 </h4>
+
+     <form>
+      <div class="row">
+      <!--   date picker is from http://foundation-datepicker.peterbeno.com/, it needs the right library pulled in
+      form is from https://foundation.zurb.com/sites/docs/v/5.5.3/components/forms.html
+        -->
+        <div class="large-12 columns">
+          <label>Name of Service
+            <input type="text" placeholder="large-12.columns" />
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="large-4 columns">
+          <label>Date of Service
+            <input type="text" placeholder="large-4.columns"   class="span2"  id="dp1" />
+            <script>
+              $(function(){
+                $('#dp1').fdatepicker({
+                  initialDate: '05-22-1989',
+                  format: 'mm-dd-yyyy',
+                  disableDblClickSelection: true,
+                  leftArrow:'<<',
+                  rightArrow:'>>',
+                  closeIcon:'X',
+                  closeButton: true
+                });
+              });
+            </script>
+          </label>
+        </div>
+
+        <div class="large-4 columns">
+          <label>Mileage
+            <input type="text" placeholder="large-4.columns" />
+          </label>
+        </div>
+
+        <div class="large-4 columns">
+          <div class="row collapse">
+            <label>Aprox. Cost</label>
+            <div class="small-9 columns">
+              <input type="text" placeholder="small-9.columns" />
+            </div>
+            <div class="small-3 columns">
+              <span class="postfix">.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Comments
+            <textarea placeholder="small-12.columns"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-4 columns">
+          <a href="#" class="button postfix">Save</a>
+        </div>
+      </div>
+
+    </form>
+
+    </div>
+
