@@ -17,7 +17,6 @@
 //= require jquery
 //= require activestorage
 
-
 //= require foundation
 
 //= require jquery-ui
@@ -27,10 +26,6 @@
 //
 //= require foundation-datepicker
 //
-
-
-
-
 
 //= require components
 //= require_tree .
