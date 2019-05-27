@@ -13,8 +13,10 @@ gem 'puma', '~> 3.11'
 # sass-rails is depricated as of march 2019, recommend using sassc
 # https://github.com/sass/sassc-ruby#readme
 #  gem 'sassc'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
+
+
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
@@ -29,13 +31,26 @@ gem 'uglifier', '>= 1.3.0'
 # see tzinfo-data change below
 
 gem 'devise'
-gem 'react-rails', '~> 2.5'
+
+# many react-rails issues, decided not to use
+#  'react-rails', '~> 2.5' -- removed g e m 20190526
+
+# gem 'foundation-rails', '~> 6.5', '>= 6.5.3.0'
+# forum suggests rolling back to v 6.3.1 but that throws a sass error
+# foundation-rails (~> 6.3.1) ... depends on sass (>= 3.3.0, < 3.5)
+# gem 'foundation-rails', '~> 6.3.1'
+gem 'foundation-rails', '~> 6.5', '>= 6.5.3.0'
+
+gem 'autoprefixer-rails'
 
 # see https://rubygems.org/gems/jquery-rails/versions/4.3.1
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-gem 'foundation-rails', '~> 6.5', '>= 6.5.3.0'
-gem 'autoprefixer-rails'
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+
+gem 'foundation-datepicker-rails', '~> 0.0.1'
+
+gem 'modernizr-rails'
 
 # webpacker, webpack and babel were throwing many errors, decided to hold off
 # gem 'webpacker'

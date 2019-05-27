@@ -1,5 +1,5 @@
-//= require react-server
-//= require react_ujs
+// require react-server  removed = 20190526
+// require react_ujs  removed = 20190526
 //= require ./components
 //
 // By default, this file is loaded for server-side rendering.

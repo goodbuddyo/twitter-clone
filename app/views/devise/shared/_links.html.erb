@@ -2,7 +2,7 @@
 <div class="mg-sessionRegWrapper">
 
 <%- if controller_name != 'sessions' %>
-  <div class="mg-sessionReg"><%= link_to "Log in", new_session_path(resource_name) %></div>
+  <div class="mg-sessionReg"><%= link_to "Log In", new_session_path(resource_name) %></div>
 <% end %>
 
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>

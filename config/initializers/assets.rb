@@ -13,6 +13,15 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
+
+
+# add jquery
+Rails.application.config.assets.precompile += %w( vendor/jquery.min.js )
+# add foundation.js
+Rails.application.config.assets.precompile += %w( vendor/foundation.min.js )
+
 # add modernizer
 Rails.application.config.assets.precompile += %w( vendor/modernizr.js )
+
+
 

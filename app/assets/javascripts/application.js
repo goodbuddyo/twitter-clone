@@ -11,16 +11,31 @@
 // about supported directives.
 //
 
+//  require react removed = 20190526
 
+// foundation-rails info: https://foundation.zurb.com/sites/docs/v/5.5.3/applications.html
 //= require jquery
 //= require activestorage
-//= require react
+
 
 //= require foundation
-$(document).foundation();
+
+//= require jquery-ui
+
+//
+//= require foundation-datepicker
+//
+
+
+
+
 
 //= require components
 //= require_tree .
 //= require modernizr
+
+Foundation.addToJquery($);
+
+$(document).foundation();
 
 $(function(){ $(document).foundation(); });
