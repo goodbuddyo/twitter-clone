@@ -23,6 +23,8 @@
 Sass::SyntaxError in Devise::Sessions#new
 */
 @import "foundation_and_overrides";
+
+
 /* Add imports of custom sass/scss files here */
 
 
@@ -31,17 +33,17 @@ Sass::SyntaxError in Devise::Sessions#new
 /*
  *= require jquery-ui
  */ 
+ /*
+ *= require jquery-ui/datepicker
+*/
 
  /*
  *= require foundation-datepicker
  */
 
-
  /*
   div { border-top: solid 0.5px red; }
  */
-
-
 
 .menu.mg-topmenu .mg-topmenuli a { display: inline; padding: 0.7rem .3rem 0.7rem .3rem; }
 div.mg-top-bar {   background-color:#99cccc;}
@@ -55,6 +57,7 @@ div.mg-top-bar {   background-color:#99cccc;}
 .mg-vehicle-heading .mg-pageheading { font-size: 1.7rem;  line-height: 1.6rem; margin-top: 0.1rem;}
 .mg-vehicle-heading  h2 { font-weight:strong;font-weight:900;  }
 .mg-vehicle-heading a.button { padding: 0.9rem 1.6rem; margin: 0.2rem 0.4rem; font-size: 1.2rem; }
+.mg-vehicle-info { font-size: 1.2rem;  font-weight:normal; font-weight:300;  }
 a.button.radius,
 .button.radius {border-radius: 0.4rem; }
 .mg-introtext,

@@ -22,6 +22,8 @@
 
 //= require jquery-ui
 
+//= require jquery-ui/datepicker
+
 //
 //= require foundation-datepicker
 //

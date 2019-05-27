@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= content_for?(:title) ? yield(:title) : "The Garage " %></title>
+    <title>
+    <%= content_for?(:title) ? yield(:title) : "The Garage " %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    "application" %>
@@ -25,8 +26,10 @@
 
       <div class="grid-x mg-vehicle-heading mg-buttonrow ">
         <div class="large-7 medium-7 small-7 cell">
-          <ul class="menu float-left mg-topbrand" >
-            <li class="menu-text mg-topbrandli">The Garage</li>
+
+          <ul class="menu float-left mg-topmenu" >
+            <li class=" menu-text float-left mg-topmenuli"> 
+            <a class="mg-brand-link" href="/">The Garage</a></li>
           </ul>
         </div>
         <div class="large-5 medium-5 small-5 cell  align-right">
