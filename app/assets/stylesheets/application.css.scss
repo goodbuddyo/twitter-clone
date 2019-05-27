@@ -23,21 +23,44 @@
 
  /* div { border-top: solid 0.5px red; } */
 
-.menu.mg-topmenu .mg-topmenuli a { display: inline; padding: 0.7rem .3rem 0.7rem .3rem; }
-.mg-body div.mg-top-bar { background-color:#99cccc;}
+
+.mg-body div.mg-top-bar { background-color:#aac6d8;}
+.menu.mg-topmenu li.menu-text.mg-topmenuli-rt { font-size: 0.76rem;  text-align: right;  padding-top: 0.9rem;}
+.menu.mg-topmenu .mg-topmenuli a,
+.menu.mg-topmenu .mg-topmenuli button { display: inline; padding: 0.7rem .3rem 0.7rem .3rem; }
 .mg-login-input label { margin-top: 0.1rem; margin-bottom: 0.1rem; display:block; line-height: 1.2rem;}
+
+.menu.mg-topmenu .mg-topmenuli.menu-text {  padding: 0.7rem   0.2rem  0.7rem .1rem; }
+
 .mg-login-input-em { font-size: 0.72rem;}
 .mg-sessionRegWrapper{display:flex; justify-content: flex-start; margin-top: 2.0rem;}
 .mg-sessionReg {float:left; padding-right: .93rem;}
 .mg-topmenu a.mg-brand-link {color: #0a0a0a;}
 .mg-topmenu a.mg-brand-link:hover {color: #1779ba;}
-.mg-blueyear {color: #001f66;}
-.mg-vehicle-details a.button { padding: 0.7rem 0.6rem; margin-bottom: 0.4rem; }
+.mg-blueyear {color: #001f66; font-size:1.3rem;}
+
+.mg-vehicle-details a.button.mg-button-short,
+.mg-vehicle-details button.button.mg-button-short { padding: 0.3rem 0.6rem; margin-bottom: 0.4rem; } 
+
+
+
+.mg-body  a.button.mg-button-wide,
+.mg-body  button.button.mg-button-wide,
+.mg-body .mg-service-wrapper .mg-buttonrow a.button.mg-button-wide {    padding-left: 3em; padding-right: 3em; }
+
+
+.mg-vehicle-details a.button,
+.mg-vehicle-details button.button { padding: 0.7rem 0.6rem; margin-bottom: 0.4rem; }
+.mg-vehicle-details h4 {  margin-bottom: 0.2rem; }
 .mg-vehicle-heading .mg-pageheading { font-size: 1.7rem; line-height: 1.6rem; margin-top: 0.6rem;}
 .mg-vehicle-heading h2 { font-weight:strong;font-weight:900; }
-.mg-vehicle-heading a.button { margin: 0.2rem 0.4rem; padding: 0.6rem 0.6rem; font-size: 1.0rem; }
+
+
+.mg-vehicle-heading a.button,
+.mg-vehicle-heading button.button { margin: 0.2rem 0.4rem; padding: 0.6rem 0.6rem; font-size: 1.0rem; }
 .mg-vehicle-info { font-size: 1.2rem; font-weight:normal; font-weight:300; }
-a.button.radius,
+a.button.radius, 
+button.button.radius,
 .button.radius {border-radius: 0.4rem; }
 .mg-introtext,
 .mg-jumbo .column.text-center { padding-right:0.1em; padding-left:0.1em; }
@@ -56,7 +79,8 @@ a.button.radius,
 .mg-service-wrapper { padding: 0 0.6rem; }
 .mg-vehicle-wrapper .mg-vehicle-details { padding-right: 0; padding-left: 0.25rem; margin-bottom: 0.5rem;}
 .mg-vehicle-wrapper .reveal.mg-vehiclemodal { top: 10px; }
-.mg-service-wrapper .mg-buttonrow a.button { padding: 0.6rem 0.6rem; }
+.mg-top-bar .mg-buttonrow .cell.align-right { margin-left:0; margin-right:0.3rem;}
+
 .mg-vehicle-wrapper .mg-buttonrow a.button,
 .mg-service-wrapper .mg-buttonrow a.button { padding: 0.6rem 0.6rem; font-size: 1.0rem;}
 .mg-vehicle-wrapper .mg-buttonrow button.button ,
@@ -71,10 +95,10 @@ a.button.radius,
 .actions.mg-loginbutton input { padding: 0.4rem 0.9rem 0.5rem 0.9rem ; border-radius: 0.4em; background-color: #1779ba; color: #ffffff;}
 .mg-toptext .h4, .mg-toptext h4{font-size:1.5rem;line-height:1.2;}
 .grid-padding-x.mg-toptext .cell {padding-left: 0.1rem; padding-right: 0.1rem; }
-.mg-left-img {padding-left: 1.0rem; padding-right: 0.4rem;}
+.mg-left-img {padding-left: .0rem; padding-right: 0.2rem;}
 .mg-service-form { margin-top: 0.6rem; }
 
-/* this is 1024 px and smaller */
+/* this is 1024 px and larger */
 @media print, screen and (min-width: 64em) {
 
  /* div { border-top: solid 1px green!important; } */
@@ -86,10 +110,11 @@ a.button.radius,
  .mg-yieldcontent .mg-vehicle-wrapper,
  .mg-yieldcontent .mg-service-wrapper { padding: 0 8.6rem; }
  .grid-padding-x.mg-toptext .cell.mg-form-div { padding: 0 4.6rem; padding-right: 4.6rem; padding:-left 4.6rem; }
- .mg-vehicle-heading a.button { padding: 0.6rem 0.6rem; font-size: 1.0rem; }
+ .mg-vehicle-heading a.button, 
+ .mg-vehicle-heading button.button { padding: 0.6rem 0.6rem; font-size: 1.0rem; }
 }
 
-/* this is 639px and smaller */
+/* this is 639px and larger */
 @media print, screen and (min-width: 40em) {
 
  /* div { border-top: solid 1px purple; } */
@@ -98,11 +123,11 @@ a.button.radius,
  .mg-toptext h4{font-size:1.8rem;line-height:2.6rem;}
  .mg-vehicle-wrapper,
  .mg-service-wrapper { padding: 0 2.6rem; }
-
  .mg-yieldcontent,
  .mg-yieldcontent { padding: 0 1.6rem; }
-
- .mg-vehicle-heading a.button { padding: 0.6rem 0.6rem; font-size: 1.0rem; }
+ .mg-vehicle-heading a.button,
+ .mg-vehicle-heading button.button { padding: 0.6rem 0.6rem; font-size: 1.0rem; }
+ .menu.mg-topmenu li.menu-text.mg-topmenuli-rt {   padding-top: 0.6rem;  font-size: 0.98rem; }
 
 }
 

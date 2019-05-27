@@ -27,11 +27,13 @@
           <a class="mg-brand-link" href="/">The Garage</a></li>
         </ul>
       </div>
-      <div class="large-7 medium-7 small-7 cell  align-right">
+      <div class="large-7 medium-7 small-7 cell  align-right float-right">
          <ul class="menu float-right mg-topmenu" >
         <% if user_signed_in? %>
-          <li class=" menu-text float-right mg-topmenuli"> 
+          <li class=" menu-text float-right mg-topmenuli mg-topmenuli-rt"> 
             <%= current_user.email %>
+            </li>
+            <li class=" menu-text float-right mg-topmenuli mg-topmenuli-rt"> 
             <%= link_to "Log Out", destroy_user_session_path, method: 'DELETE' %> 
           </li>
         <% else %>
