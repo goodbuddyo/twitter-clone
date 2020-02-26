@@ -42,19 +42,15 @@
 .mg-vehicle-details a.button.mg-button-short,
 .mg-vehicle-details button.button.mg-button-short { padding: 0.3rem 0.6rem; margin-bottom: 0.4rem; } 
 
-
-
 .mg-body  a.button.mg-button-wide,
 .mg-body  button.button.mg-button-wide,
-.mg-body .mg-service-wrapper .mg-buttonrow a.button.mg-button-wide {    padding-left: 3em; padding-right: 3em; }
-
+.mg-body .mg-service-wrapper .mg-buttonrow a.button.mg-button-wide {    padding-left: 2.6em; padding-right: 2.6em; }
 
 .mg-vehicle-details a.button,
 .mg-vehicle-details button.button { padding: 0.7rem 0.6rem; margin-bottom: 0.4rem; }
 .mg-vehicle-details h4 {  margin-bottom: 0.2rem; }
 .mg-vehicle-heading .mg-pageheading { font-size: 1.7rem; line-height: 1.6rem; margin-top: 0.6rem;}
 .mg-vehicle-heading h2 { font-weight:strong;font-weight:900; }
-
 
 .mg-vehicle-heading a.button,
 .mg-vehicle-heading button.button { margin: 0.2rem 0.4rem; padding: 0.6rem 0.6rem; font-size: 1.0rem; }
@@ -85,6 +81,7 @@ button.button.radius,
 .mg-service-wrapper .mg-buttonrow a.button { padding: 0.6rem 0.6rem; font-size: 1.0rem;}
 .mg-vehicle-wrapper .mg-buttonrow button.button ,
 .mg-service-wrapper .mg-buttonrow button.button { padding: 0.7rem 1rem}
+.mg-service-date { padding-right:1.0rem; font-size: 0.8rem;}
 .mg-jumbo .mg-toptext .cell p,
 .mg-toptext .subheader { margin-bottom: .2rem;}
 .mg-toptext p.mg-introtext { margin : 0.84rem 0 0 0; margin-top: 0.84rem; }
@@ -97,7 +94,8 @@ button.button.radius,
 .grid-padding-x.mg-toptext .cell {padding-left: 0.1rem; padding-right: 0.1rem; }
 .mg-left-img {padding-left: .0rem; padding-right: 0.2rem;}
 .mg-service-form { margin-top: 0.6rem; }
-
+.mg-service-form h3 {font-weight: bold; margin-bottom: 0.1rem;}
+.mg-service-form h4 {font-weight: normal; margin-bottom: 0rem;}
 /* this is 1024 px and larger */
 @media print, screen and (min-width: 64em) {
 
@@ -128,6 +126,7 @@ button.button.radius,
  .mg-vehicle-heading a.button,
  .mg-vehicle-heading button.button { padding: 0.6rem 0.6rem; font-size: 1.0rem; }
  .menu.mg-topmenu li.menu-text.mg-topmenuli-rt {   padding-top: 0.6rem;  font-size: 0.98rem; }
+ .mg-service-date { padding-right:2.0rem; font-size: 0.99rem;}
 
 }
 

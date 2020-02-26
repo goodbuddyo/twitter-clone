@@ -35,6 +35,12 @@ gem 'devise'
 # many react-rails issues, decided not to use
 #  'react-rails', '~> 2.5' -- removed g e m 20190526
 
+# see https://rubygems.org/gems/jquery-rails/versions/4.3.1
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+
+
 # gem 'foundation-rails', '~> 6.5', '>= 6.5.3.0'
 # forum suggests rolling back to v 6.3.1 but that throws a sass error
 # foundation-rails (~> 6.3.1) ... depends on sass (>= 3.3.0, < 3.5)
@@ -43,10 +49,7 @@ gem 'foundation-rails', '~> 6.5', '>= 6.5.3.0'
 
 gem 'autoprefixer-rails'
 
-# see https://rubygems.org/gems/jquery-rails/versions/4.3.1
-gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 
 gem 'foundation-datepicker-rails', '~> 0.0.1'
 
